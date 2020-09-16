@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ifo-zU-eJP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UITableView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cYX-xu-Vdc">
+                                <rect key="frame" x="125.5" y="410" width="163" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vW8-Et-djt">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Bbf-f9-mjb"/>
+                                        </constraints>
+                                        <state key="normal" title="使用系统cell的基本使用"/>
+                                        <connections>
+                                            <action selector="btn1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyn-HD-bSL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-wC-jR7">
+                                        <rect key="frame" x="0.0" y="50" width="163" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5Ck-RH-6kb"/>
+                                        </constraints>
+                                        <state key="normal" title="带索引的tableView"/>
+                                        <connections>
+                                            <action selector="btn2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bvq-FB-cyc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sc-DW-9tD">
+                                        <rect key="frame" x="0.0" y="100" width="163" height="30"/>
+                                        <state key="normal" title="与UISearchBar一起使用"/>
+                                        <connections>
+                                            <action selector="btn3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IfX-nv-6MC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cYX-xu-Vdc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1yi-nI-oin"/>
+                            <constraint firstItem="cYX-xu-Vdc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="k3s-En-gva"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UITableView" id="2XI-C8-dUp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eME-5f-XKk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ifo-zU-eJP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0dA-Nr-Hec">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e4R-AB-fFb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VU0-p4-1ly" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
